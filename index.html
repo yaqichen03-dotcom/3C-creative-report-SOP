@@ -47,8 +47,11 @@
   .cat-card-feature .metrics-row{grid-template-columns:repeat(3,1fr)}
   .cat-card-feature .metrics-row .n{color:#fbbf24}
 
-  /* 双周报专用网格：2列并排 */
-  .report-grid{grid-template-columns:repeat(2,1fr)}
+  /* 总览区网格：3列并排 */
+  .report-grid{grid-template-columns:repeat(3,1fr)}
+  @media (max-width:1080px){
+    .report-grid{grid-template-columns:repeat(2,1fr)}
+  }
   @media (max-width:720px){
     .report-grid{grid-template-columns:1fr}
   }
@@ -113,6 +116,21 @@
           <div class="m"><div class="n">AI</div><div class="l">特征提炼</div></div>
         </div>
         <div class="enter">查看双周报 →</div>
+      </div>
+    </a>
+    <a class="cat-card cat-card-feature" href="https://ams-003c.github.io/client-dashboard/3s-decode.html" target="_blank">
+      <div class="card-head" style="background:linear-gradient(135deg,#1e3a5f 0%,#f472b6 120%)">
+        <div class="icon">⏱️</div>
+        <div class="title">跑量素材 3s 拆解及 3s 素材库<span class="badge">3s 黄金开头</span></div>
+        <div class="desc">头部素材前 3 秒逐帧拆解 · 3s 素材库 · 钩子模式归类</div>
+      </div>
+      <div class="card-body">
+        <div class="metrics-row">
+          <div class="m"><div class="n">逐帧</div><div class="l">3s 拆解</div></div>
+          <div class="m"><div class="n">素材库</div><div class="l">可检索</div></div>
+          <div class="m"><div class="n">钩子</div><div class="l">模式归类</div></div>
+        </div>
+        <div class="enter">查看 3s 拆解 →</div>
       </div>
     </a>
   </div>
